@@ -2,6 +2,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:var(--header-h)}
 body{margin:0;color:var(--ink);font-family:var(--font-sans);background:var(--white);line-height:1.6;font-synthesis:none;text-rendering:optimizeLegibility}
+.top-anchor{position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none}
 body.no-scroll{overflow:hidden}
 img{display:block;max-width:100%}
 button,input,select{font:inherit}
