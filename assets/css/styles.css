@@ -338,14 +338,29 @@ h2 em {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(29, 0, 2, 0.5) 0%, rgba(47, 0, 3, 0.28) 42%, rgba(51, 0, 3, 0.11) 72%, rgba(25, 0, 2, 0.04) 100%),
-    linear-gradient(0deg, rgba(31, 0, 2, 0.32) 0%, transparent 50%);
+    radial-gradient(ellipse at 72% 31%, rgba(238, 209, 144, 0.13) 0%, rgba(214, 168, 92, 0.045) 24%, transparent 48%),
+    linear-gradient(105deg, rgba(29, 0, 2, 0.57) 0%, rgba(59, 3, 8, 0.34) 38%, rgba(42, 0, 4, 0.1) 69%, rgba(25, 0, 2, 0.16) 100%),
+    linear-gradient(180deg, rgba(25, 0, 2, 0.2) 0%, transparent 34%, rgba(31, 0, 2, 0.42) 100%);
+  box-shadow:
+    inset 0 0 150px rgba(24, 0, 2, 0.18),
+    inset 0 -90px 120px rgba(24, 0, 2, 0.15);
+}
+
+.hero__overlay::before {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(238, 209, 144, 0.085) 0%, transparent 23%, transparent 76%, rgba(214, 168, 92, 0.045) 100%),
+    radial-gradient(circle at 50% 48%, transparent 48%, rgba(28, 0, 2, 0.2) 100%);
+  content: "";
+  pointer-events: none;
 }
 
 .hero__overlay::after {
   position: absolute;
   inset: 18px;
   border: 1px solid rgba(236, 203, 133, 0.28);
+  box-shadow: inset 0 0 26px rgba(238, 209, 144, 0.035);
   content: "";
   pointer-events: none;
 }
@@ -2481,8 +2496,16 @@ h2 em {
 
   .hero__overlay {
     background:
-      linear-gradient(180deg, rgba(29, 0, 2, 0.2) 0%, rgba(29, 0, 2, 0.34) 46%, rgba(29, 0, 2, 0.62) 100%),
-      linear-gradient(90deg, rgba(29, 0, 2, 0.28), rgba(29, 0, 2, 0.08));
+      radial-gradient(circle at 50% 18%, rgba(238, 209, 144, 0.1) 0%, transparent 34%),
+      linear-gradient(180deg, rgba(29, 0, 2, 0.18) 0%, rgba(29, 0, 2, 0.3) 43%, rgba(29, 0, 2, 0.64) 100%),
+      linear-gradient(90deg, rgba(29, 0, 2, 0.3), rgba(29, 0, 2, 0.09));
+    box-shadow: inset 0 -70px 90px rgba(24, 0, 2, 0.18);
+  }
+
+  .hero__overlay::before {
+    background:
+      linear-gradient(145deg, rgba(238, 209, 144, 0.065), transparent 32%),
+      radial-gradient(circle at 50% 44%, transparent 52%, rgba(28, 0, 2, 0.16) 100%);
   }
 
   .hero__overlay::after {
