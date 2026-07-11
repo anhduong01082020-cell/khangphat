@@ -406,13 +406,13 @@ h2 em {
 }
 
 .hero__project-logo {
-  width: 220px;
-  height: 118px;
-  margin-bottom: 22px;
+  width: 380px;
+  height: 210px;
+  margin: -24px 0 10px;
   object-fit: cover;
-  object-position: center 49%;
-  border: 1px solid rgba(238, 209, 144, 0.38);
-  box-shadow: 0 12px 28px rgba(29, 0, 2, 0.22);
+  object-position: center 47%;
+  border: 0;
+  filter: drop-shadow(0 8px 14px rgba(24, 0, 2, 0.48));
 }
 
 .hero h1 {
@@ -2204,16 +2204,21 @@ h2 em {
 @media (min-width: 1161px) {
   .header__inner,
   .hero__content {
-    width: min(calc(100% - 96px), 1560px);
+    width: min(calc(100% - 64px), 1720px);
   }
 
   .hero__content {
-    grid-template-columns: minmax(0, 1fr) 280px;
-    gap: clamp(88px, 7vw, 132px);
+    grid-template-columns: minmax(0, 1fr) 290px;
+    gap: clamp(88px, 6vw, 120px);
   }
 
   .hero__copy {
-    max-width: 900px;
+    max-width: 960px;
+  }
+
+  .hero__eyebrow {
+    font-size: 15px;
+    letter-spacing: 0.12em;
   }
 }
 
@@ -2491,9 +2496,9 @@ h2 em {
   }
 
   .hero__project-logo {
-    width: 190px;
-    height: 104px;
-    margin-bottom: 17px;
+    width: 240px;
+    height: 132px;
+    margin: -10px 0 8px;
   }
 
   .hero__eyebrow {
@@ -2834,8 +2839,8 @@ h2 em {
   }
 
   .hero__project-logo {
-    width: 156px;
-    height: 84px;
+    width: 210px;
+    height: 116px;
   }
 
   .hero h1 {
