@@ -330,6 +330,8 @@ h2 em {
 .hero__media img {
   width: 100%;
   height: 100%;
+  color: transparent;
+  font-size: 0;
   object-fit: cover;
   object-position: center;
 }
@@ -2013,13 +2015,13 @@ h2 em {
   text-align: center;
 }
 
-.form-status {
-  min-height: 18px;
-  margin: 7px 0 0;
-  color: var(--wine-700);
-  font-size: 11px;
-  font-weight: 700;
-  text-align: center;
+.form-honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 .site-footer {
@@ -2486,7 +2488,7 @@ h2 em {
   }
 
   .hero__media {
-    background-image: none;
+    background-image: url("../images/hero-khang-phat-century-960.webp?v=20260711-3");
     transform: none;
   }
 
@@ -2694,7 +2696,9 @@ h2 em {
   }
 
   .masterplan__visual img {
-    min-height: 320px;
+    height: clamp(240px, 62vw, 360px);
+    min-height: 0;
+    object-position: center;
   }
 
   .amenity-grid {
@@ -3133,6 +3137,172 @@ h2 em {
     bottom: 116px;
     left: auto;
     transform: none;
+  }
+}
+
+.thank-you-page {
+  min-height: 100vh;
+  min-height: 100svh;
+  color: var(--white);
+  background: var(--wine-950);
+}
+
+.thank-you {
+  position: relative;
+  display: grid;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 42px 20px;
+  background:
+    radial-gradient(circle at 72% 25%, rgba(238, 209, 144, 0.16), transparent 28%),
+    linear-gradient(110deg, rgba(35, 0, 3, 0.91), rgba(73, 2, 8, 0.72) 48%, rgba(31, 0, 2, 0.88)),
+    url("../images/hero-khang-phat-century-1920.webp") center / cover no-repeat;
+  overflow: hidden;
+  place-items: center;
+}
+
+.thank-you::before {
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(238, 209, 144, 0.3);
+  box-shadow: inset 0 0 80px rgba(24, 0, 2, 0.2);
+  content: "";
+  pointer-events: none;
+}
+
+.thank-you__card {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 740px);
+  padding: 36px clamp(28px, 6vw, 74px) 42px;
+  background: linear-gradient(145deg, rgba(70, 0, 6, 0.9), rgba(35, 0, 3, 0.94));
+  border: 1px solid rgba(238, 209, 144, 0.44);
+  box-shadow: 0 30px 90px rgba(20, 0, 2, 0.48);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.thank-you__logo {
+  display: block;
+  width: 270px;
+  height: 142px;
+  margin: -22px auto 3px;
+  overflow: hidden;
+}
+
+.thank-you__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 47%;
+  filter: drop-shadow(0 8px 14px rgba(20, 0, 2, 0.45));
+}
+
+.thank-you__check {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 18px;
+  color: var(--wine-900);
+  background: linear-gradient(135deg, var(--gold-300), var(--gold-500));
+  border-radius: 50%;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1;
+  place-items: center;
+  box-shadow: 0 10px 30px rgba(214, 168, 92, 0.22);
+}
+
+.thank-you__eyebrow {
+  margin-bottom: 12px;
+  color: var(--gold-300);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.thank-you h1 {
+  margin-bottom: 18px;
+  color: var(--white);
+  font-size: clamp(48px, 7vw, 76px);
+  letter-spacing: -0.035em;
+}
+
+.thank-you__lead {
+  max-width: 580px;
+  margin: 0 auto 25px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 16px;
+}
+
+.thank-you__contact {
+  width: min(100%, 420px);
+  margin: 0 auto 27px;
+  padding: 17px 20px;
+  border-top: 1px solid rgba(238, 209, 144, 0.25);
+  border-bottom: 1px solid rgba(238, 209, 144, 0.25);
+}
+
+.thank-you__contact span,
+.thank-you__contact small {
+  display: block;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.thank-you__contact a {
+  display: block;
+  margin: 4px 0;
+  color: var(--gold-300);
+  font-family: var(--font-display);
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.thank-you__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.thank-you__note {
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 10px;
+}
+
+@media (max-width: 520px) {
+  .thank-you {
+    padding: 22px 14px;
+  }
+
+  .thank-you::before {
+    inset: 10px;
+  }
+
+  .thank-you__card {
+    padding: 25px 20px 30px;
+  }
+
+  .thank-you__logo {
+    width: 220px;
+    height: 118px;
+  }
+
+  .thank-you h1 {
+    font-size: 46px;
+  }
+
+  .thank-you__lead {
+    font-size: 14px;
+  }
+
+  .thank-you__actions .button {
+    width: 100%;
   }
 }
 

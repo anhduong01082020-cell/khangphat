@@ -8,7 +8,7 @@
   <meta name="description" content="Khang Phát Century - tâm điểm đô thị thương mại tại phường Nếnh, Bắc Ninh. Đăng ký nhận thông tin dự án, chính sách và tư vấn sản phẩm.">
   <title>Khang Phát Century | Đô thị thương mại tại Bắc Ninh</title>
   <link rel="icon" type="image/webp" href="assets/logos/logo.webp">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260711-3">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Đi đến nội dung chính</a>
@@ -46,8 +46,8 @@
   <main id="main-content">
     <section class="hero" id="trang-chu" aria-labelledby="hero-title">
       <picture class="hero__media">
-        <source media="(max-width: 700px)" srcset="assets/images/hero-khang-phat-century-960.webp">
-        <img src="assets/images/hero-khang-phat-century-1920.webp" alt="Phối cảnh tổng thể Khang Phát Century trong hệ sinh thái khu công nghiệp Quang Châu" width="1920" height="1080" fetchpriority="high">
+        <source media="(max-width: 700px)" srcset="assets/images/hero-khang-phat-century-960.webp?v=20260711-3">
+        <img src="assets/images/hero-khang-phat-century-1920.webp?v=20260711-3" alt="Phối cảnh tổng thể Khang Phát Century trong hệ sinh thái khu công nghiệp Quang Châu" width="1920" height="1080" fetchpriority="high">
       </picture>
       <div class="hero__overlay" aria-hidden="true"></div>
       <div class="container hero__content">
@@ -532,7 +532,12 @@
             <p>Các trường có dấu * là bắt buộc.</p>
           </div>
 
-          <form class="lead-form" id="lead-form" data-recipient="khangphatcentury@gmail.com" action="mailto:khangphatcentury@gmail.com" method="post" enctype="text/plain">
+          <form class="lead-form" id="lead-form" action="https://formsubmit.co/khangphatcentury@gmail.com" method="post" accept-charset="UTF-8">
+            <input type="hidden" name="_subject" value="Khách hàng mới đăng ký tư vấn Khang Phát Century">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://khangphat.vercel.app/cam-on.html">
+            <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="form-grid">
               <label class="field">
                 <span>Họ và tên *</span>
@@ -601,9 +606,8 @@
               <span>Tôi đồng ý để đơn vị tư vấn liên hệ và cung cấp thông tin dự án theo nội dung đăng ký. *</span>
             </label>
 
-            <button class="button button--gold button--full" type="submit">Gửi đăng ký qua email</button>
-            <p class="form-note">Trang tĩnh không lưu dữ liệu. Khi bấm gửi, hệ thống sẽ mở email đã điền sẵn tới <strong>khangphatcentury@gmail.com</strong>; quý khách chỉ cần kiểm tra và bấm “Gửi”.</p>
-            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <button class="button button--gold button--full" type="submit">Gửi đăng ký ngay</button>
+            <p class="form-note">Thông tin được gửi trực tiếp và bảo mật tới bộ phận tư vấn Khang Phát Century. Quý khách không cần mở ứng dụng email.</p>
           </form>
         </div>
       </div>
@@ -652,6 +656,6 @@
     <p></p>
   </dialog>
 
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=20260711-3"></script>
 </body>
 </html>
