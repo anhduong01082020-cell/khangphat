@@ -1,204 +1,663 @@
 <!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Khang Phát Century - khu đô thị 19,36 ha tại phường Nếnh, Bắc Ninh, liền kề KCN Quang Châu.">
-  <title>Khang Phát Century | Bắc Ninh</title>
-  <link rel="icon" href="assets/logo.webp" type="image/webp">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#5f0005">
+  <meta name="description" content="Khang Phát Century - tâm điểm đô thị thương mại tại phường Nếnh, Bắc Ninh. Đăng ký nhận thông tin dự án, chính sách và tư vấn sản phẩm.">
+  <title>Khang Phát Century | Đô thị thương mại tại Bắc Ninh</title>
+  <link rel="icon" type="image/webp" href="assets/logos/logo.webp">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <div class="top-anchor" id="top" aria-hidden="true"></div>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Khang Phát Century - về đầu trang">
-      <img src="assets/logo.webp" alt="Biểu trưng Khang Phát Century">
-      <span><strong>Khang Phát Century</strong><small>Báu vật truyền đời - Sinh lời bền vững</small></span>
-    </a>
-    <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="nav" aria-label="Điều hướng chính">
-      <a href="#tong-quan">Tổng quan</a>
-      <a href="#vi-tri">Vị trí</a>
-      <a href="#san-pham">Sản phẩm</a>
-      <a href="#phap-ly">Pháp lý</a>
-      <a class="nav-cta" href="tel:0945698801">Hotline 0945 698 801</a>
-    </nav>
+  <a class="skip-link" href="#main-content">Đi đến nội dung chính</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="#trang-chu" aria-label="Khang Phát Century - Trang chủ">
+        <img class="brand__developer-logo" src="assets/logos/logo-khang-phat-holdings-transparent.png" alt="Khang Phát Holdings" width="460" height="217">
+        <span class="brand__divider" aria-hidden="true"></span>
+        <span class="brand__project-identity">
+          <span class="brand__project-symbol" aria-hidden="true">
+            <img src="assets/logos/logo.webp" alt="" width="1000" height="1000">
+          </span>
+          <span class="brand__project-copy">
+            <strong>Khang Phát Century</strong>
+            <small>Báu vật truyền đời · Sinh lời bền vững</small>
+          </span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Điều hướng chính">
+        <a href="#tong-quan">Tổng quan</a>
+        <a href="#vi-tri">Vị trí</a>
+        <a href="#san-pham">Sản phẩm</a>
+        <a href="#tien-ich">Tiện ích</a>
+        <a href="#chinh-sach">Chính sách</a>
+        <a href="#phap-ly">Pháp lý</a>
+        <a class="nav-cta" href="tel:0945698801">Hotline 0945 698 801</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-overlay"></div>
-      <div class="hero-content reveal">
-        <p class="eyebrow light">Khu đô thị mới tại phường Nếnh, Bắc Ninh</p>
-        <h1 id="hero-title">Khang Phát Century</h1>
-        <p class="hero-copy">Tâm điểm đô thị kinh doanh bên KCN Quang Châu, kết nối trực tiếp ĐT295B và cao tốc Hà Nội - Bắc Giang.</p>
-        <div class="hero-actions">
-          <a class="button button-gold" href="#lien-he">Nhận bảng giá <span aria-hidden="true">→</span></a>
-          <a class="button button-ghost" href="#vi-tri">Khám phá vị trí</a>
+  <main id="main-content">
+    <section class="hero" id="trang-chu" aria-labelledby="hero-title">
+      <picture class="hero__media">
+        <source media="(max-width: 700px)" srcset="assets/images/hero-khang-phat-century-960.webp">
+        <img src="assets/images/hero-khang-phat-century-1920.webp" alt="Phối cảnh tổng thể Khang Phát Century trong hệ sinh thái khu công nghiệp Quang Châu" width="1920" height="1080" fetchpriority="high">
+      </picture>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <div class="hero__copy reveal">
+          <p class="hero__eyebrow">Tâm điểm đô thị thương mại Bắc Ninh</p>
+          <img class="hero__project-logo" src="assets/logos/brand.webp" alt="Khang Phát Century - Báu vật truyền đời, sinh lời bền vững" width="1080" height="1080">
+          <h1 id="hero-title"><span>Kiến tạo thịnh vượng</span><em>Giữ trọn giá trị muôn đời</em></h1>
+          <p class="hero__lead">Khu đô thị quy hoạch đồng bộ tại phường Nếnh, đón nhịp sống sôi động từ ĐT295B và hệ sinh thái khu công nghiệp Quang Châu.</p>
+          <div class="hero__actions">
+            <a class="button button--gold" href="#dang-ky">Đăng ký nhận tư vấn</a>
+            <a class="button button--outline-light" href="tel:0945698801">Gọi 0945 698 801</a>
+          </div>
+          <p class="hero__note">Nhận brochure, mặt bằng, chính sách và tư vấn lựa chọn sản phẩm phù hợp.</p>
+        </div>
+        <aside class="hero__facts reveal" aria-label="Thông tin nổi bật">
+          <div class="hero-fact">
+            <strong>19,36 ha</strong>
+            <span>Quy mô dự án</span>
+          </div>
+          <div class="hero-fact">
+            <strong>661</strong>
+            <span>Sản phẩm thấp tầng</span>
+          </div>
+          <div class="hero-fact">
+            <strong>16–35 m</strong>
+            <span>Đường nội khu</span>
+          </div>
+          <div class="hero-fact">
+            <strong>Lâu dài</strong>
+            <span>Hình thức sở hữu</span>
+          </div>
+        </aside>
+      </div>
+      <a class="hero__scroll" href="#tong-quan" aria-label="Xem tiếp nội dung">
+        <span>Khám phá</span><i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <section class="trust-strip" aria-label="Thông tin đơn vị phát triển">
+      <div class="container trust-strip__inner">
+        <div class="trust-strip__logo">
+          <span>Đơn vị phát triển dự án</span>
+          <img src="assets/logos/logo-khang-phat-holdings-transparent.png" alt="Khang Phát Holdings" width="460" height="217">
+        </div>
+        <div class="trust-strip__item">
+          <span>Chủ đầu tư</span>
+          <strong>Công ty Cổ phần Xây dựng – Phát triển Nhà và Thương mại</strong>
+        </div>
+        <div class="trust-strip__item">
+          <span>Địa điểm</span>
+          <strong>Phường Nếnh, tỉnh Bắc Ninh</strong>
         </div>
       </div>
-      <a class="hero-next" href="#tong-quan" aria-label="Xem tổng quan dự án">Khám phá <span aria-hidden="true">↓</span></a>
     </section>
 
-    <section class="facts" aria-label="Thông số dự án">
-      <div><strong>19,36 ha</strong><span>Quy mô dự án</span></div>
-      <div><strong>661</strong><span>Sản phẩm thấp tầng</span></div>
-      <div><strong>16-35 m</strong><span>Đường nội khu</span></div>
-      <div><strong>Lâu dài</strong><span>Hình thức sở hữu</span></div>
-    </section>
+    <section class="section overview" id="tong-quan" aria-labelledby="overview-title">
+      <div class="container split split--overview">
+        <div class="split__visual reveal">
+          <figure class="framed-image framed-image--tall">
+            <img src="assets/images/tien-do-ha-tang-thuc-te.webp" alt="Hình ảnh thực tế hạ tầng Khang Phát Century" width="1440" height="1080" loading="lazy">
+            <figcaption>Hình ảnh thực tế hạ tầng dự án</figcaption>
+          </figure>
+          <div class="signature-card" aria-hidden="true">
+            <span>Đô thị thương mại</span>
+            <strong>661</strong>
+            <small>sản phẩm</small>
+          </div>
+        </div>
 
-    <section class="section overview" id="tong-quan">
-      <div class="section-inner split">
-        <div class="overview-copy reveal">
-          <p class="eyebrow">Tổng quan dự án</p>
-          <h2>Một đô thị mở giữa nhịp sống công nghiệp</h2>
-          <p>Khang Phát Century tọa lạc trên mặt đường ĐT295B, ngay cửa ngõ KCN Quang Châu. Dự án được định hướng thành khu đô thị kinh doanh sầm uất, phục vụ nhu cầu ở, thương mại và khai thác dòng tiền của cộng đồng chuyên gia, kỹ sư trong khu vực.</p>
-          <dl class="project-details">
-            <div><dt>Tên pháp lý</dt><dd>Khu đô thị mới phía Nam thị trấn Nếnh - Việt Yên</dd></div>
-            <div><dt>Chủ đầu tư</dt><dd>CTCP Xây dựng - Phát triển Nhà và Thương mại</dd></div>
-            <div><dt>Đơn vị phát triển</dt><dd>Khang Phát Holdings</dd></div>
-            <div><dt>Hạ tầng</dt><dd>Đường nhựa, vỉa hè, điện ngầm, cấp nước đồng bộ</dd></div>
+        <div class="split__content reveal">
+          <p class="eyebrow"><span></span>Tổng quan dự án</p>
+          <h2 id="overview-title">Một tâm điểm giao thương<br><em>được quy hoạch cho tương lai</em></h2>
+          <p class="lead">Khang Phát Century phát triển mô hình đô thị mở, kết nối nhanh với các trục giao thông lớn và khu công nghiệp lân cận. Hệ sản phẩm thấp tầng đa dạng phục vụ cả nhu cầu an cư, kinh doanh và tích lũy tài sản dài hạn.</p>
+
+          <dl class="project-specs">
+            <div><dt>Tên thương mại</dt><dd>Khang Phát Century</dd></div>
+            <div><dt>Quy mô</dt><dd>Khoảng 19,36 ha</dd></div>
+            <div><dt>Tổng sản phẩm</dt><dd>661 sản phẩm thấp tầng</dd></div>
+            <div><dt>Loại hình</dt><dd>Đất liền kề, shophouse, biệt thự</dd></div>
+            <div><dt>Quy hoạch</dt><dd>Đồng bộ hạ tầng, tiện ích nội khu</dd></div>
+            <div><dt>Sở hữu</dt><dd>Lâu dài</dd></div>
           </dl>
-        </div>
-        <figure class="image-frame reveal">
-          <img src="assets/project-2.webp" alt="Toàn cảnh thực tế khu đô thị Khang Phát Century" loading="lazy">
-          <figcaption>Hình ảnh thực tế dự án</figcaption>
-        </figure>
-      </div>
-    </section>
 
-    <section class="section location" id="vi-tri">
-      <div class="section-inner">
-        <div class="section-heading reveal">
-          <div><p class="eyebrow">Vị trí chiến lược</p><h2>Liền kề KCN Quang Châu, mở rộng kết nối toàn vùng</h2></div>
-          <p>Dự án tiếp cận nhanh các cụm công nghiệp lớn, cao tốc Hà Nội - Bắc Giang và các đô thị trọng điểm của vùng Kinh Bắc.</p>
-        </div>
-        <button class="map-button reveal" type="button" data-lightbox="assets/location.webp" aria-label="Mở lớn bản đồ vị trí">
-          <img src="assets/location.webp" alt="Bản đồ liên kết vị trí Khang Phát Century" loading="lazy">
-          <span>Mở toàn màn hình</span>
-        </button>
-        <div class="distance-row reveal">
-          <div><strong>2 phút</strong><span>KCN Quang Châu</span></div>
-          <div><strong>8 phút</strong><span>KCN Vân Trung</span></div>
-          <div><strong>12 phút</strong><span>TP. Bắc Ninh</span></div>
-          <div><strong>15 phút</strong><span>Amber Hills</span></div>
+          <div class="inline-actions">
+            <a class="text-link" href="assets/documents/BROCHURE-KHANG-PHAT-CENTURY.pdf" target="_blank" rel="noopener">Xem brochure dự án <span aria-hidden="true">→</span></a>
+            <a class="text-link text-link--muted" href="#phap-ly">Xem hồ sơ tài liệu <span aria-hidden="true">→</span></a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section products" id="san-pham">
-      <div class="section-inner">
-        <div class="section-heading reveal">
-          <div><p class="eyebrow">Cơ cấu sản phẩm</p><h2>Ba lựa chọn cho nhu cầu ở, kinh doanh và tích sản</h2></div>
-          <p>Diện tích phổ biến khoảng 100 m², cùng nhiều lựa chọn theo từng vị trí và phân khu.</p>
+    <section class="section location" id="vi-tri" aria-labelledby="location-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow"><span></span>Vị trí chiến lược<span></span></p>
+          <h2 id="location-title">Liền mạch kết nối<br><em>Đón trọn dòng giao thương</em></h2>
+          <p>Tọa lạc trên trục ĐT295B, gần cầu vượt Quang Châu và khu công nghiệp Quang Châu, dự án sở hữu lợi thế tiếp cận thuận tiện đến các vùng kinh tế năng động của Bắc Ninh.</p>
         </div>
+
+        <div class="location__map reveal">
+          <img src="assets/images/vi-tri-du-an-1600.webp" alt="Sơ đồ vị trí và liên kết vùng Khang Phát Century" width="2300" height="1294" loading="lazy">
+          <button class="image-zoom" type="button" data-lightbox="assets/images/vi-tri-du-an-1600.webp" data-caption="Sơ đồ vị trí và liên kết vùng Khang Phát Century" aria-label="Phóng to sơ đồ vị trí">+</button>
+        </div>
+
+        <div class="location__cards">
+          <article class="connection-card reveal">
+            <span class="connection-card__number">01</span>
+            <h3>Trục ĐT295B</h3>
+            <p>Tiếp cận trực diện tuyến giao thông quan trọng, gia tăng khả năng nhận diện và khai thác thương mại.</p>
+          </article>
+          <article class="connection-card reveal">
+            <span class="connection-card__number">02</span>
+            <h3>KCN Quang Châu</h3>
+            <p>Liền kề hệ sinh thái sản xuất quy mô lớn, nơi tập trung đông đảo chuyên gia và người lao động.</p>
+          </article>
+          <article class="connection-card reveal">
+            <span class="connection-card__number">03</span>
+            <h3>Liên kết vùng</h3>
+            <p>Thuận tiện kết nối Bắc Giang cũ, trung tâm Bắc Ninh, Hà Nội và các tỉnh kinh tế trọng điểm phía Bắc.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section demand">
+      <div class="container demand__inner">
+        <div class="demand__copy reveal">
+          <p class="eyebrow eyebrow--light"><span></span>Động lực tăng trưởng</p>
+          <h2>Nhu cầu thật từ<br><em>một thủ phủ công nghiệp</em></h2>
+          <p>Dự án nằm trong vùng ảnh hưởng của các khu công nghiệp lớn, nơi hiện diện nhiều doanh nghiệp công nghệ và chuỗi cung ứng toàn cầu. Nguồn chuyên gia, kỹ sư và người lao động tạo nên nhu cầu thường xuyên về lưu trú, mua sắm, ẩm thực, chăm sóc sức khỏe và giải trí.</p>
+          <div class="demand__stats">
+            <div><strong>100.000+</strong><span>Lao động trong vùng theo tài liệu dự án</span></div>
+            <div><strong>Đa ngành</strong><span>Nhu cầu ở – kinh doanh – dịch vụ</span></div>
+          </div>
+        </div>
+        <div class="demand__visual reveal">
+          <img class="demand__main-image" src="assets/images/kcn-quang-chau-1.webp" alt="Hình ảnh thực tế khu công nghiệp Quang Châu" width="900" height="675" loading="lazy">
+          <div class="demand__thumbs" aria-label="Hình ảnh thực tế khu công nghiệp Quang Châu">
+            <img src="assets/images/kcn-quang-chau-2.webp" alt="Toàn cảnh khu công nghiệp Quang Châu" width="900" height="675" loading="lazy">
+            <img src="assets/images/kcn-quang-chau-3.webp" alt="Hạ tầng sản xuất tại khu công nghiệp Quang Châu" width="900" height="675" loading="lazy">
+          </div>
+          <span class="demand__caption">Hình ảnh thực tế khu công nghiệp Quang Châu</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section masterplan" aria-labelledby="masterplan-title">
+      <div class="container">
+        <div class="masterplan__grid">
+          <div class="masterplan__copy reveal">
+            <p class="eyebrow"><span></span>Mặt bằng tổng thể</p>
+            <h2 id="masterplan-title">Quy hoạch chỉn chu<br><em>Tối ưu từng giá trị sử dụng</em></h2>
+            <p>Không gian đô thị được tổ chức theo các phân khu sản phẩm rõ ràng, kết nối bằng hệ đường nội khu rộng và hệ tiện ích thiết yếu. Cơ cấu sản phẩm tạo lựa chọn linh hoạt cho nhiều mục tiêu tài chính.</p>
+
+            <div class="product-counts">
+              <div><strong>450</strong><span>Lô đất liền kề</span></div>
+              <div><strong>165</strong><span>Căn shophouse</span></div>
+              <div><strong>46</strong><span>Lô biệt thự</span></div>
+            </div>
+
+            <ul class="feature-list">
+              <li>Đường nội khu rộng từ 16–35 m</li>
+              <li>Vỉa hè rộng từ 4–6 m</li>
+              <li>Hệ thống điện, nước được đầu tư đồng bộ</li>
+              <li>Nhiều cổng kết nối, tổ chức giao thông thuận tiện</li>
+            </ul>
+          </div>
+
+          <div class="masterplan__visual reveal">
+            <img src="assets/images/mat-bang-tong-the-1400.webp" alt="Mặt bằng quy hoạch tổng thể Khang Phát Century" width="1391" height="921" loading="lazy">
+            <button class="image-zoom" type="button" data-lightbox="assets/images/mat-bang-tong-the-1400.webp" data-caption="Mặt bằng quy hoạch tổng thể Khang Phát Century" aria-label="Phóng to mặt bằng tổng thể">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products" id="san-pham" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span>Danh mục sản phẩm</p>
+          <h2 id="products-title">Ba lựa chọn tài sản<br><em>Một chuẩn sống thịnh vượng</em></h2>
+          <p>Mỗi dòng sản phẩm có lợi thế riêng về công năng, khả năng khai thác và mức độ riêng tư. Đội ngũ tư vấn sẽ hỗ trợ đối chiếu vị trí, diện tích và chính sách của từng lô/căn.</p>
+        </div>
+
         <div class="product-grid">
-          <article class="product-card reveal"><span class="product-index">01</span><strong>450</strong><h3>Đất nền liền kề</h3><p>Không gian ở thấp tầng, chủ động bố trí công năng bên trong theo định hướng kiến trúc dự án.</p></article>
-          <article class="product-card feature reveal"><span class="product-index">02</span><strong>165</strong><h3>Shophouse</h3><p>Xây thô, hoàn thiện mặt ngoài; sở hữu lâu dài và phù hợp khai thác kinh doanh tại đô thị mở.</p></article>
-          <article class="product-card reveal"><span class="product-index">03</span><strong>46</strong><h3>Đất nền biệt thự</h3><p>Quỹ sản phẩm giới hạn, diện tích rộng và không gian riêng tư trong tổng thể quy hoạch đồng bộ.</p></article>
+          <article class="product-card reveal">
+            <figure class="product-card__media">
+              <img src="assets/images/product-dat-lien-ke.webp" alt="Hình ảnh thực tế quỹ đất và hạ tầng đường nội khu" width="1200" height="900" loading="lazy">
+              <figcaption>Hình ảnh thực tế</figcaption>
+            </figure>
+            <div class="product-card__index">01</div>
+            <p class="product-card__type">450 sản phẩm</p>
+            <h3>Đất liền kề</h3>
+            <p>Phù hợp nhu cầu xây dựng tổ ấm theo thiết kế được phê duyệt, đồng thời tích lũy một tài sản sở hữu lâu dài trong khu đô thị đồng bộ.</p>
+            <ul>
+              <li>Diện tích phổ biến khoảng 100 m²</li>
+              <li>Công năng ở kết hợp khai thác linh hoạt</li>
+              <li>Chủ động kế hoạch hoàn thiện công trình</li>
+            </ul>
+            <a href="#dang-ky">Nhận danh sách sản phẩm <span>→</span></a>
+          </article>
+
+          <article class="product-card product-card--featured reveal">
+            <div class="product-card__ribbon">Tâm điểm thương mại</div>
+            <figure class="product-card__media">
+              <img src="assets/images/product-shophouse.webp" alt="Phối cảnh tuyến phố shophouse Khang Phát Century" width="1200" height="675" loading="lazy">
+              <figcaption>Phối cảnh minh họa</figcaption>
+            </figure>
+            <div class="product-card__index">02</div>
+            <p class="product-card__type">165 sản phẩm</p>
+            <h3>Shophouse</h3>
+            <p>Dòng nhà phố thương mại xây thô, hoàn thiện mặt ngoài; nổi bật nhờ vị trí trên các tuyến phố sôi động và khả năng tổ chức đa công năng.</p>
+            <ul>
+              <li>Kết hợp ở – kinh doanh – cho thuê</li>
+              <li>Kiến trúc mặt ngoài đồng bộ</li>
+              <li>Tiếp cận dòng khách nội khu và lân cận</li>
+            </ul>
+            <a href="#dang-ky">Nhận tư vấn shophouse <span>→</span></a>
+          </article>
+
+          <article class="product-card reveal">
+            <figure class="product-card__media">
+              <img src="assets/images/product-biet-thu.webp" alt="Phối cảnh khu biệt thự và không gian xanh Khang Phát Century" width="1200" height="675" loading="lazy">
+              <figcaption>Phối cảnh minh họa</figcaption>
+            </figure>
+            <div class="product-card__index">03</div>
+            <p class="product-card__type">46 sản phẩm</p>
+            <h3>Biệt thự</h3>
+            <p>Số lượng giới hạn, không gian rộng và riêng tư, dành cho gia chủ đề cao trải nghiệm sống khác biệt và giá trị truyền đời.</p>
+            <ul>
+              <li>Mật độ sản phẩm giới hạn</li>
+              <li>Không gian sống riêng tư, đẳng cấp</li>
+              <li>Phù hợp tài sản tích lũy dài hạn</li>
+            </ul>
+            <a href="#dang-ky">Nhận quỹ căn biệt thự <span>→</span></a>
+          </article>
+        </div>
+
+        <p class="fine-print">Thông số diện tích, vị trí và thiết kế có thể khác nhau theo từng sản phẩm. Vui lòng kiểm tra hồ sơ cụ thể trước khi giao dịch.</p>
+      </div>
+    </section>
+
+    <section class="section amenities" id="tien-ich" aria-labelledby="amenities-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow"><span></span>Hệ sinh thái tiện ích<span></span></p>
+          <h2 id="amenities-title">Một điểm đến<br><em>Vạn trải nghiệm mỗi ngày</em></h2>
+          <p>Từ sinh hoạt cộng đồng đến thương mại, ẩm thực, lưu trú, chăm sóc sức khỏe và giải trí, Khang Phát Century hướng tới một nhịp sống trọn vẹn ngay trong khu đô thị.</p>
+        </div>
+
+        <div class="amenity-grid">
+          <button class="amenity-card amenity-card--large reveal" type="button" data-lightbox="assets/images/tien-ich-cong-dong-1280.webp" data-caption="Không gian tiện ích và sinh hoạt cộng đồng">
+            <img src="assets/images/tien-ich-cong-dong-1280.webp" alt="Không gian tiện ích cộng đồng Khang Phát Century" width="2752" height="1536" loading="lazy">
+            <span><small>Kết nối</small>Tiện ích cộng đồng</span>
+          </button>
+          <button class="amenity-card reveal" type="button" data-lightbox="assets/images/thuong-mai-tai-chinh-1280.webp" data-caption="Tuyến phố thương mại và tài chính">
+            <img src="assets/images/thuong-mai-tai-chinh-1280.webp" alt="Tuyến phố thương mại tài chính" width="2752" height="1536" loading="lazy">
+            <span><small>Giao thương</small>Thương mại – tài chính</span>
+          </button>
+          <button class="amenity-card reveal" type="button" data-lightbox="assets/images/pho-am-thuc-1280.webp" data-caption="Tuyến phố ẩm thực đa sắc">
+            <img src="assets/images/pho-am-thuc-1280.webp" alt="Tuyến phố ẩm thực tại Khang Phát Century" width="2752" height="1536" loading="lazy">
+            <span><small>Ẩm thực</small>Phố ẩm thực đa sắc</span>
+          </button>
+          <button class="amenity-card reveal" type="button" data-lightbox="assets/images/luu-tru-khach-san-1280.webp" data-caption="Dịch vụ lưu trú và khách sạn">
+            <img src="assets/images/luu-tru-khach-san-1280.webp" alt="Dịch vụ lưu trú khách sạn" width="2754" height="1536" loading="lazy">
+            <span><small>Lưu trú</small>Khách sạn – căn hộ dịch vụ</span>
+          </button>
+          <button class="amenity-card reveal" type="button" data-lightbox="assets/images/cham-soc-suc-khoe-1280.webp" data-caption="Dịch vụ chăm sóc sức khỏe">
+            <img src="assets/images/cham-soc-suc-khoe-1280.webp" alt="Dịch vụ chăm sóc sức khỏe" width="2754" height="1536" loading="lazy">
+            <span><small>An tâm</small>Chăm sóc sức khỏe</span>
+          </button>
+          <button class="amenity-card amenity-card--wide reveal" type="button" data-lightbox="assets/images/giai-tri-ktv-1280.webp" data-caption="Không gian giải trí và KTV">
+            <img src="assets/images/giai-tri-ktv-1280.webp" alt="Không gian giải trí KTV" width="2754" height="1536" loading="lazy">
+            <span><small>Giải trí</small>Không gian thư giãn về đêm</span>
+          </button>
+        </div>
+
+        <div class="amenity-mini-grid reveal" aria-label="Các tiện ích thiết yếu">
+          <button class="amenity-mini-card" type="button" data-lightbox="assets/images/tien-ich-phuc-hop-4.webp" data-caption="Công viên trung tâm - phối cảnh minh họa">
+            <img src="assets/images/tien-ich-phuc-hop-4.webp" alt="Phối cảnh công viên trung tâm" width="1000" height="563" loading="lazy">
+            <span><small>Không gian xanh</small>Công viên trung tâm</span>
+          </button>
+          <button class="amenity-mini-card" type="button" data-lightbox="assets/images/tien-ich-phuc-hop-2.webp" data-caption="Trường mầm non - phối cảnh minh họa">
+            <img src="assets/images/tien-ich-phuc-hop-2.webp" alt="Phối cảnh trường mầm non" width="1000" height="563" loading="lazy">
+            <span><small>Giáo dục</small>Trường mầm non</span>
+          </button>
+          <button class="amenity-mini-card" type="button" data-lightbox="assets/images/tien-ich-phuc-hop-3.webp" data-caption="Nhà văn hóa và sinh hoạt cộng đồng - phối cảnh minh họa">
+            <img src="assets/images/tien-ich-phuc-hop-3.webp" alt="Phối cảnh nhà văn hóa và sinh hoạt cộng đồng" width="1000" height="563" loading="lazy">
+            <span><small>Cộng đồng</small>Nhà văn hóa</span>
+          </button>
+          <button class="amenity-mini-card" type="button" data-lightbox="assets/images/thuong-mai-tai-chinh-1280.webp" data-caption="Khu thương mại - phối cảnh minh họa">
+            <img src="assets/images/thuong-mai-tai-chinh-1280.webp" alt="Phối cảnh khu thương mại" width="1280" height="714" loading="lazy">
+            <span><small>Mua sắm</small>Khu thương mại</span>
+          </button>
+          <button class="amenity-mini-card amenity-mini-card--plan" type="button" data-lightbox="assets/images/mat-bang-tong-the-1400.webp" data-caption="Vị trí bãi đỗ xe trên mặt bằng quy hoạch">
+            <img src="assets/images/mat-bang-tong-the-1400.webp" alt="Mặt bằng thể hiện vị trí bãi đỗ xe" width="1391" height="921" loading="lazy">
+            <span><small>Theo quy hoạch</small>Bãi đỗ xe</span>
+          </button>
+          <button class="amenity-mini-card" type="button" data-lightbox="assets/images/tien-ich-phuc-hop-1.webp" data-caption="Sân chơi trẻ em - phối cảnh minh họa">
+            <img src="assets/images/tien-ich-phuc-hop-1.webp" alt="Phối cảnh sân chơi trẻ em" width="1000" height="563" loading="lazy">
+            <span><small>Gia đình</small>Sân chơi trẻ em</span>
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="section planning" id="quy-hoach">
-      <div class="section-inner split planning-layout">
-        <button class="plan-image reveal" type="button" data-lightbox="assets/planning.webp" aria-label="Mở lớn sơ đồ quy hoạch">
-          <img src="assets/planning.webp" alt="Sơ đồ quy hoạch Khang Phát Century" loading="lazy">
-          <span>Mở sơ đồ</span>
-        </button>
-        <div class="reveal">
-          <p class="eyebrow light">Quy hoạch đồng bộ</p>
-          <h2>Hạ tầng hoàn thiện, tiện ích đủ đầy</h2>
-          <p>Không gian đô thị được tổ chức với các trục đường rộng, vỉa hè 4-6 m và hệ thống tiện ích nội khu theo quy hoạch.</p>
-          <ul class="amenities">
-            <li>Công viên và suối điều hòa</li>
-            <li>Trung tâm sinh hoạt cộng đồng</li>
-            <li>Trường mầm non và khu vui chơi</li>
-            <li>Bãi đỗ xe và hạ tầng điện ngầm</li>
-            <li>Năm cổng và lối lưu thông</li>
+    <section class="section reasons" aria-labelledby="reasons-title">
+      <div class="container">
+        <div class="reasons__header reveal">
+          <div>
+            <p class="eyebrow eyebrow--light"><span></span>Giá trị khác biệt</p>
+            <h2 id="reasons-title">10 dấu ấn tạo nên<br><em>Khang Phát Century</em></h2>
+          </div>
+          <p>Một bất động sản đáng cân nhắc không chỉ nằm ở vị trí, mà còn ở tổng hòa quy hoạch, công năng, pháp lý và sức sống của cộng đồng xung quanh.</p>
+        </div>
+
+        <ol class="reason-grid">
+          <li class="reveal"><span>01</span><strong>Vị trí trên trục ĐT295B</strong><p>Thuận tiện tiếp cận và nhận diện thương mại.</p></li>
+          <li class="reveal"><span>02</span><strong>Liền kề KCN Quang Châu</strong><p>Đón nhu cầu lưu trú, mua sắm và dịch vụ.</p></li>
+          <li class="reveal"><span>03</span><strong>Quy mô gần 20 ha</strong><p>Đủ lớn để hình thành một khu đô thị đồng bộ.</p></li>
+          <li class="reveal"><span>04</span><strong>Hệ sản phẩm đa dạng</strong><p>Liền kề, shophouse và biệt thự cho nhiều mục tiêu.</p></li>
+          <li class="reveal"><span>05</span><strong>661 sản phẩm giới hạn</strong><p>Quỹ hàng rõ ràng trong tổng thể quy hoạch.</p></li>
+          <li class="reveal"><span>06</span><strong>Đường rộng 16–35 m</strong><p>Hạ tầng nội khu thông thoáng, thuận tiện giao thương.</p></li>
+          <li class="reveal"><span>07</span><strong>Tiện ích đa lớp</strong><p>Đáp ứng nhu cầu sống, học tập, mua sắm và giải trí.</p></li>
+          <li class="reveal"><span>08</span><strong>Đô thị mở</strong><p>Tăng tính kết nối giữa cư dân và khu vực lân cận.</p></li>
+          <li class="reveal"><span>09</span><strong>Sở hữu lâu dài</strong><p>Giá trị tài sản bền vững cho nhiều thế hệ.</p></li>
+          <li class="reveal"><span>10</span><strong>Chính sách linh hoạt</strong><p>Lựa chọn thanh toán nhanh hoặc hỗ trợ tài chính.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section payment" id="chinh-sach" aria-labelledby="payment-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow"><span></span>Chính sách bán hàng<span></span></p>
+          <h2 id="payment-title">Linh hoạt dòng tiền<br><em>Chủ động kế hoạch sở hữu</em></h2>
+          <p>Hai phương án thanh toán giúp khách hàng cân đối theo nguồn vốn. Nội dung dưới đây được tóm tắt từ chính sách ngày 09/07/2026; điều kiện áp dụng cần đối chiếu hồ sơ tại thời điểm giao dịch.</p>
+        </div>
+
+        <div class="payment-grid">
+          <article class="payment-card reveal">
+            <div class="payment-card__head">
+              <span>Phương án 01</span>
+              <h3>Thanh toán nhanh</h3>
+              <p>Chiết khấu tới</p>
+              <strong>8%</strong>
+            </div>
+            <ol class="timeline">
+              <li><span>01</span><div><strong>Đặt chỗ</strong><p>200 triệu đồng/sản phẩm</p></div></li>
+              <li><span>02</span><div><strong>Ký thỏa thuận</strong><p>Thanh toán đủ 15%</p></div></li>
+              <li><span>03</span><div><strong>Đợt tiếp theo</strong><p>Thanh toán đến 80%</p></div></li>
+              <li><span>04</span><div><strong>Hoàn tất</strong><p>5% còn lại theo tiến độ/hồ sơ</p></div></li>
+            </ol>
+          </article>
+
+          <article class="payment-card payment-card--featured reveal">
+            <div class="payment-card__badge">Tối ưu dòng tiền</div>
+            <div class="payment-card__head">
+              <span>Phương án 02</span>
+              <h3>Hỗ trợ ngân hàng</h3>
+              <p>Hỗ trợ lãi suất</p>
+              <strong>0% / 24 tháng</strong>
+            </div>
+            <ol class="timeline">
+              <li><span>01</span><div><strong>Đặt chỗ</strong><p>200 triệu đồng/sản phẩm</p></div></li>
+              <li><span>02</span><div><strong>Vốn tự có</strong><p>Khách hàng thanh toán 15%</p></div></li>
+              <li><span>03</span><div><strong>Thanh toán tiếp</strong><p>Khách hàng thanh toán đến 35%</p></div></li>
+              <li><span>04</span><div><strong>Ngân hàng giải ngân</strong><p>Dự kiến 50% theo điều kiện tín dụng</p></div></li>
+            </ol>
+            <p class="payment-card__note">Ân hạn nợ gốc và hỗ trợ lãi suất trong 24 tháng theo điều kiện của chương trình và ngân hàng.</p>
+          </article>
+        </div>
+
+        <div class="bonus-policy reveal">
+          <div><strong>+1%</strong><span>Ưu đãi khách hàng có booking trước đó, khi đáp ứng điều kiện chương trình</span></div>
+          <div><strong>+1%</strong><span>Ưu đãi khách hàng mua từ 02 sản phẩm, theo chính sách áp dụng</span></div>
+          <a href="assets/documents/CHINH-SACH-BAN-HANG-09-07-2026.pdf" target="_blank" rel="noopener">Xem chính sách đầy đủ <span>→</span></a>
+        </div>
+
+        <p class="fine-print fine-print--center">Mọi mức chiết khấu, hỗ trợ lãi suất và tiến độ thanh toán phụ thuộc điều kiện cụ thể của chính sách, hồ sơ khách hàng và xác nhận tại thời điểm ký kết. Nội dung trang không thay thế văn bản giao dịch.</p>
+      </div>
+    </section>
+
+    <section class="section legal" id="phap-ly" aria-labelledby="legal-title">
+      <div class="container legal__grid">
+        <div class="legal__copy reveal">
+          <p class="eyebrow eyebrow--light"><span></span>Hồ sơ &amp; pháp lý</p>
+          <h2 id="legal-title">Thông tin minh bạch<br><em>Đồng hành an tâm</em></h2>
+          <p>Dự án có quy hoạch chi tiết tỷ lệ 1/500. Sản phẩm thuộc loại hình đất ở đô thị, hình thức sở hữu lâu dài theo tài liệu dự án. Khách hàng nên kiểm tra hồ sơ pháp lý, lô đất/căn cụ thể và nội dung hợp đồng trước khi quyết định.</p>
+          <ul class="legal__highlights">
+            <li><strong>1/500</strong><span>Quy hoạch chi tiết</span></li>
+            <li><strong>Đất ở đô thị</strong><span>Mục đích sử dụng</span></li>
+            <li><strong>Lâu dài</strong><span>Hình thức sở hữu</span></li>
           </ul>
         </div>
-      </div>
-    </section>
 
-    <section class="section gallery" aria-labelledby="gallery-title">
-      <div class="section-inner">
-        <div class="section-heading reveal"><div><p class="eyebrow">Sức bật khu vực</p><h2 id="gallery-title">Hạ tầng và công nghiệp hiện hữu</h2></div><p>Không gian phát triển bao quanh bởi các khu công nghiệp lớn và trục giao thông huyết mạch.</p></div>
-        <div class="gallery-grid">
-          <figure class="wide reveal"><img src="assets/infrastructure.webp" alt="Hạ tầng giao thông quanh dự án" loading="lazy"><figcaption>Hạ tầng liên vùng</figcaption></figure>
-          <figure class="reveal"><img src="assets/kcn-1.webp" alt="Khu công nghiệp gần Khang Phát Century" loading="lazy"><figcaption>Vành đai công nghiệp</figcaption></figure>
-          <figure class="reveal"><img src="assets/kcn-2.webp" alt="Toàn cảnh khu công nghiệp Quang Châu" loading="lazy"><figcaption>KCN Quang Châu</figcaption></figure>
+        <div class="document-list reveal">
+          <a href="assets/documents/BROCHURE-KHANG-PHAT-CENTURY.pdf" target="_blank" rel="noopener">
+            <span class="document-list__icon">PDF</span>
+            <span><strong>Brochure Khang Phát Century</strong><small>Tổng quan, mặt bằng và hình ảnh dự án</small></span>
+            <i>↗</i>
+          </a>
+          <a href="assets/documents/Q-A-KHANG-PHAT-CENTURY.pdf" target="_blank" rel="noopener">
+            <span class="document-list__icon">PDF</span>
+            <span><strong>Bộ câu hỏi &amp; trả lời dự án</strong><small>Thông tin sản phẩm và quy định liên quan</small></span>
+            <i>↗</i>
+          </a>
+          <a href="assets/documents/CHINH-SACH-BAN-HANG-09-07-2026.pdf" target="_blank" rel="noopener">
+            <span class="document-list__icon">PDF</span>
+            <span><strong>Chính sách bán hàng</strong><small>Cập nhật ngày 09/07/2026</small></span>
+            <i>↗</i>
+          </a>
+          <a href="assets/documents/BAN-VE-QUY-HOACH-PHAN-LO.pdf" target="_blank" rel="noopener">
+            <span class="document-list__icon">PDF</span>
+            <span><strong>Bản vẽ quy hoạch phân lô</strong><small>Tham khảo bố trí sản phẩm toàn dự án</small></span>
+            <i>↗</i>
+          </a>
+          <a href="assets/documents/XAC-NHAN-TEN-THUONG-MAI.pdf" target="_blank" rel="noopener">
+            <span class="document-list__icon">PDF</span>
+            <span><strong>Xác nhận tên thương mại</strong><small>Thông tin tên dự án Khang Phát Century</small></span>
+            <i>↗</i>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section legal" id="phap-ly">
-      <div class="section-inner">
-        <div class="section-heading reveal"><div><p class="eyebrow">Thông tin minh bạch</p><h2>Pháp lý và chính sách bán hàng</h2></div><p>Tên thương mại đã được chủ đầu tư xác nhận; dự án có quy hoạch 1/500 và hồ sơ quyền sử dụng đất.</p></div>
-        <div class="legal-grid">
-          <article class="legal-item reveal"><span>01</span><h3>Quy hoạch 1/500</h3><p>Quy hoạch chi tiết và cơ cấu phân lô được thể hiện đầy đủ trong hồ sơ dự án.</p></article>
-          <article class="legal-item reveal"><span>02</span><h3>Sở hữu lâu dài</h3><p>Sản phẩm đất ở đô thị; shophouse tại dự án được xác nhận sở hữu lâu dài.</p></article>
-          <article class="legal-item reveal"><span>03</span><h3>Giá giao dịch minh bạch</h3><p>Giá bán thống nhất giữa giao dịch thực tế và hợp đồng theo Q&A dự án.</p></article>
+    <section class="section faq" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <div class="faq__heading reveal">
+          <p class="eyebrow"><span></span>Giải đáp nhanh</p>
+          <h2 id="faq-title">Thông tin khách hàng<br><em>thường quan tâm</em></h2>
+          <p>Cần thông tin chi tiết hơn? Liên hệ trực tiếp hotline hoặc để lại nhu cầu để được tư vấn theo từng sản phẩm.</p>
+          <a class="button button--wine" href="tel:0945698801">Gọi 0945 698 801</a>
         </div>
-        <div class="policy-band reveal">
-          <div><span>Giá tham khảo từ</span><strong>69 triệu/m²</strong><small>Bảng giá rumor đợt 1, ngày 30/06/2026</small></div>
-          <div class="policy-points"><p><strong>8%</strong> chiết khấu thanh toán nhanh</p><p><strong>0%</strong> lãi suất hỗ trợ trong 12 tháng*</p><p><strong>1%</strong> ưu đãi thêm cho booking đủ điều kiện*</p></div>
-          <a class="button button-gold" href="#lien-he">Nhận chính sách</a>
-        </div>
-        <p class="disclaimer">*Thông tin tham khảo theo tài liệu ngày 30/06/2026 và có thể được điều chỉnh theo chính sách từng thời kỳ.</p>
-      </div>
-    </section>
 
-    <section class="section video-section">
-      <div class="section-inner video-layout">
-        <div class="reveal"><p class="eyebrow light">TVC dự án</p><h2>Khám phá Khang Phát Century qua từng góc nhìn</h2><p>Toàn cảnh vị trí, quy hoạch và tiềm năng phát triển của đô thị ngay cửa ngõ KCN Quang Châu.</p></div>
-        <video class="reveal" controls preload="none" poster="assets/hero.webp"><source src="TVC KHANG PHÁT CENTURY 26.6.mp4" type="video/mp4">Trình duyệt của bạn không hỗ trợ video.</video>
-      </div>
-    </section>
-
-    <section class="section faq" id="faq">
-      <div class="section-inner faq-layout">
-        <div class="faq-intro reveal"><p class="eyebrow">Thông tin thường gặp</p><h2>Những điều cần biết trước khi lựa chọn</h2><p>Nội dung được tổng hợp trực tiếp từ bảng Q&A chính thức của dự án.</p></div>
         <div class="accordion reveal">
-          <details><summary>Đất nền có giới hạn thời gian xây dựng không?<span>+</span></summary><p>Thời hạn xây dựng nhà ở là 10 năm kể từ ngày đủ điều kiện chuyển nhượng. Trường hợp chưa có nhu cầu, khách hàng có thể thực hiện thủ tục xin gia hạn theo quy định.</p></details>
-          <details><summary>Nhà ở được xây dựng theo mẫu nào?<span>+</span></summary><p>Công trình phải tuân thủ mẫu thiết kế đã được phê duyệt. Khách hàng chủ động bố trí công năng bên trong nhưng cần tuân thủ kiến trúc, cao độ và chỉ giới xây dựng.</p></details>
-          <details><summary>Chiều cao xây dựng tối đa là bao nhiêu?<span>+</span></summary><p>Công trình được xây dựng tối đa 5 tầng và 1 tum theo mẫu đã được cơ quan nhà nước phê duyệt cho dự án.</p></details>
-          <details><summary>Có bắt buộc vay ngân hàng liên kết không?<span>+</span></summary><p>Không. Khách hàng có thể thanh toán theo tiến độ và chủ động làm việc với ngân hàng phù hợp nếu không tham gia chương trình hỗ trợ của dự án.</p></details>
-          <details><summary>Dự án vận hành theo mô hình đóng hay mở?<span>+</span></summary><p>Dự án được định hướng theo mô hình đô thị mở để chuyên gia, cư dân và khách hàng thuận tiện tiếp cận các hoạt động mua sắm, dịch vụ.</p></details>
+          <details open>
+            <summary>Khang Phát Century nằm ở đâu?<span>+</span></summary>
+            <p>Dự án tọa lạc tại phường Nếnh, tỉnh Bắc Ninh, trên trục ĐT295B, gần cầu vượt và khu công nghiệp Quang Châu.</p>
+          </details>
+          <details>
+            <summary>Dự án có những loại hình sản phẩm nào?<span>+</span></summary>
+            <p>Quỹ sản phẩm gồm 450 lô đất liền kề, 165 căn shophouse xây thô hoàn thiện mặt ngoài và 46 lô biệt thự.</p>
+          </details>
+          <details>
+            <summary>Hình thức sở hữu là bao lâu?<span>+</span></summary>
+            <p>Theo tài liệu dự án, các sản phẩm là đất ở đô thị với hình thức sở hữu lâu dài. Thông tin từng sản phẩm cần đối chiếu hồ sơ cụ thể.</p>
+          </details>
+          <details>
+            <summary>Quy định xây dựng như thế nào?<span>+</span></summary>
+            <p>Công trình cần tuân thủ quy hoạch và thiết kế được phê duyệt. Theo bộ Q&amp;A dự án, chiều cao tối đa 5 tầng và 1 tum; khoảng lùi phía sau 2 m. Khách hàng cần xác nhận quy định áp dụng cho lô cụ thể.</p>
+          </details>
+          <details>
+            <summary>Chính sách ngân hàng có điều kiện gì?<span>+</span></summary>
+            <p>Khách hàng cần đáp ứng tiêu chuẩn tín dụng của ngân hàng và điều kiện chương trình. Mức giải ngân, thời gian ân hạn và hỗ trợ lãi suất được xác nhận theo hồ sơ thực tế.</p>
+          </details>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="lien-he">
-      <div class="section-inner contact-layout">
-        <div class="reveal"><p class="eyebrow light">Đăng ký tư vấn</p><h2>Nhận bảng giá và tài liệu dự án</h2><p>Để lại thông tin để nhận tư vấn và lựa chọn loại hình sản phẩm phù hợp.</p><div class="contact-direct"><a href="tel:0945698801"><span>Hotline</span><strong>0945 698 801</strong></a><a href="https://zalo.me/0945698801" target="_blank" rel="noopener"><span>Zalo</span><strong>0945 698 801</strong></a></div></div>
-        <form class="lead-form reveal" id="lead-form" action="https://formsubmit.co/ajax/khangphatcentury@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="Khách hàng mới - Khang Phát Century">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input class="honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <label>Họ và tên<input name="Họ và tên" type="text" autocomplete="name" required placeholder="Nguyễn Văn A"></label>
-          <label>Số điện thoại<input name="Số điện thoại" type="tel" autocomplete="tel" required inputmode="tel" placeholder="09xx xxx xxx"></label>
-          <label>Sản phẩm quan tâm<select name="Sản phẩm quan tâm"><option>Đất nền liền kề</option><option>Shophouse</option><option>Đất nền biệt thự</option><option>Nhận tư vấn tổng quan</option></select></label>
-          <button class="button button-gold" type="submit">Gửi yêu cầu <span aria-hidden="true">→</span></button>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
+    <section class="section register" id="dang-ky" aria-labelledby="register-title">
+      <div class="register__media" aria-hidden="true"></div>
+      <div class="register__overlay" aria-hidden="true"></div>
+      <div class="container register__grid">
+        <div class="register__copy reveal">
+          <p class="eyebrow eyebrow--light"><span></span>Đăng ký đặc quyền</p>
+          <h2 id="register-title">Nhận trọn bộ thông tin<br><em>Khang Phát Century</em></h2>
+          <p>Để lại nhu cầu để được hỗ trợ chọn sản phẩm theo mục tiêu, ngân sách và kế hoạch dòng tiền.</p>
+          <ul>
+            <li>Brochure và mặt bằng phân khu</li>
+            <li>Chính sách bán hàng cập nhật</li>
+            <li>Tư vấn quỹ sản phẩm phù hợp</li>
+            <li>Hỗ trợ lịch tham quan dự án</li>
+          </ul>
+          <div class="register__contact">
+            <span>Hotline &amp; Zalo</span>
+            <a href="tel:0945698801">0945 698 801</a>
+            <small>Hỗ trợ tư vấn trực tiếp</small>
+          </div>
+        </div>
+
+        <div class="lead-form-wrap reveal">
+          <div class="lead-form__head">
+            <span>Phiếu đăng ký tư vấn</span>
+            <h3>Thông tin của quý khách</h3>
+            <p>Các trường có dấu * là bắt buộc.</p>
+          </div>
+
+          <form class="lead-form" id="lead-form" data-recipient="khangphatcentury@gmail.com" action="mailto:khangphatcentury@gmail.com" method="post" enctype="text/plain">
+            <div class="form-grid">
+              <label class="field">
+                <span>Họ và tên *</span>
+                <input type="text" name="fullName" autocomplete="name" required placeholder="Nguyễn Văn A">
+              </label>
+              <label class="field">
+                <span>Số điện thoại *</span>
+                <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required pattern="[0-9+ .()-]{9,16}" placeholder="09xx xxx xxx">
+              </label>
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" placeholder="email@example.com">
+              </label>
+              <label class="field">
+                <span>Tỉnh/Thành đang sinh sống</span>
+                <input type="text" name="location" autocomplete="address-level1" placeholder="Hà Nội, Bắc Ninh...">
+              </label>
+              <label class="field">
+                <span>Sản phẩm quan tâm *</span>
+                <select name="product" required>
+                  <option value="">Chọn loại sản phẩm</option>
+                  <option>Đất liền kề</option>
+                  <option>Shophouse</option>
+                  <option>Biệt thự</option>
+                  <option>Cần tư vấn thêm</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Mục đích</span>
+                <select name="purpose">
+                  <option value="">Chọn mục đích</option>
+                  <option>An cư</option>
+                  <option>Kinh doanh</option>
+                  <option>Đầu tư dài hạn</option>
+                  <option>Khai thác cho thuê</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Ngân sách dự kiến</span>
+                <select name="budget">
+                  <option value="">Chọn khoảng ngân sách</option>
+                  <option>Dưới 5 tỷ đồng</option>
+                  <option>5–7 tỷ đồng</option>
+                  <option>7–10 tỷ đồng</option>
+                  <option>Trên 10 tỷ đồng</option>
+                  <option>Cần tư vấn tài chính</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Thời gian liên hệ</span>
+                <select name="contactTime">
+                  <option value="">Bất kỳ thời gian nào</option>
+                  <option>08:00–11:30</option>
+                  <option>13:30–17:30</option>
+                  <option>18:00–20:30</option>
+                </select>
+              </label>
+              <label class="field field--full">
+                <span>Nội dung cần hỗ trợ</span>
+                <textarea name="message" rows="4" placeholder="Ví dụ: Tôi muốn nhận mặt bằng và lịch tham quan dự án..."></textarea>
+              </label>
+            </div>
+
+            <label class="consent">
+              <input type="checkbox" name="consent" required>
+              <span>Tôi đồng ý để đơn vị tư vấn liên hệ và cung cấp thông tin dự án theo nội dung đăng ký. *</span>
+            </label>
+
+            <button class="button button--gold button--full" type="submit">Gửi đăng ký qua email</button>
+            <p class="form-note">Trang tĩnh không lưu dữ liệu. Khi bấm gửi, hệ thống sẽ mở email đã điền sẵn tới <strong>khangphatcentury@gmail.com</strong>; quý khách chỉ cần kiểm tra và bấm “Gửi”.</p>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer-brand"><strong>Khang Phát Century</strong><span>Phường Nếnh, tỉnh Bắc Ninh</span><a href="tel:0945698801">Hotline: 0945 698 801</a></div>
-    <p>Thông tin trên website mang tính chất tham khảo và được cập nhật theo hồ sơ dự án ngày 30/06/2026.</p>
-    <a href="#top">Lên đầu trang ↑</a>
+  <footer class="site-footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <img src="assets/logos/logo-khang-phat-century-transparent.png" alt="Logo Khang Phát Century" width="449" height="253">
+        <p>Đô thị thương mại tại phường Nếnh, tỉnh Bắc Ninh.</p>
+      </div>
+      <div>
+        <h2>Liên hệ tư vấn</h2>
+        <a href="tel:0945698801">Hotline: 0945 698 801</a>
+        <a href="https://zalo.me/0945698801" target="_blank" rel="noopener">Zalo: 0945 698 801</a>
+        <a href="mailto:khangphatcentury@gmail.com">khangphatcentury@gmail.com</a>
+      </div>
+      <div>
+        <h2>Tài liệu</h2>
+        <a href="assets/documents/BROCHURE-KHANG-PHAT-CENTURY.pdf" target="_blank" rel="noopener">Brochure dự án</a>
+        <a href="assets/documents/Q-A-KHANG-PHAT-CENTURY.pdf" target="_blank" rel="noopener">Bộ Q&amp;A</a>
+        <a href="assets/documents/CHINH-SACH-BAN-HANG-09-07-2026.pdf" target="_blank" rel="noopener">Chính sách bán hàng</a>
+      </div>
+      <div>
+        <h2>Điều hướng</h2>
+        <a href="#tong-quan">Tổng quan dự án</a>
+        <a href="#san-pham">Dòng sản phẩm</a>
+        <a href="#dang-ky">Đăng ký tư vấn</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="current-year">2026</span> Khang Phát Century. Thông tin dùng cho mục đích tham khảo.</p>
+      <p>Hình ảnh phối cảnh mang tính minh họa. Thông tin chính thức căn cứ hồ sơ và văn bản ký kết tại từng thời điểm.</p>
+    </div>
   </footer>
 
-  <aside class="contact-dock" aria-label="Liên hệ nhanh">
-    <a href="tel:0945698801"><span>Gọi</span><strong>0945 698 801</strong></a>
-    <a href="https://zalo.me/0945698801" target="_blank" rel="noopener"><span>Zalo</span><strong>Nhắn tin</strong></a>
-  </aside>
+  <div class="floating-contact" aria-label="Liên hệ nhanh">
+    <a class="floating-contact__zalo" href="https://zalo.me/0945698801" target="_blank" rel="noopener" aria-label="Nhắn Zalo 0945 698 801"><span>Zalo</span></a>
+    <a class="floating-contact__phone" href="tel:0945698801" aria-label="Gọi 0945 698 801"><span aria-hidden="true">☎</span><strong>0945 698 801</strong></a>
+  </div>
 
-  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh toàn màn hình" hidden><button type="button" aria-label="Đóng ảnh">×</button><img alt=""></div>
-  <script src="script.js"></script>
+  <dialog class="lightbox" id="lightbox" aria-label="Xem hình ảnh phóng to">
+    <button class="lightbox__close" type="button" aria-label="Đóng hình ảnh">×</button>
+    <img src="assets/logos/logo-khang-phat-century-transparent.png" alt="">
+    <p></p>
+  </dialog>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
