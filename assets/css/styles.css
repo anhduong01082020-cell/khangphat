@@ -1902,6 +1902,45 @@ h2 em {
   font-size: 40px;
 }
 
+.register__contact .register__facebook {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 15px;
+  padding: 8px 13px 8px 10px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(238, 209, 144, 0.28);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-transform: uppercase;
+  gap: 8px;
+  transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+.register__facebook b {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  color: var(--wine-900);
+  background: var(--gold-300);
+  border-radius: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1;
+  place-items: center;
+}
+
+.register__contact .register__facebook:hover,
+.register__contact .register__facebook:focus-visible {
+  color: var(--gold-300);
+  background: rgba(238, 209, 144, 0.11);
+  border-color: rgba(238, 209, 144, 0.55);
+}
+
 .lead-form-wrap {
   padding: 42px;
   color: var(--ink);
@@ -2067,6 +2106,11 @@ h2 em {
 
 .site-footer a:hover {
   color: var(--gold-300);
+}
+
+.footer__facebook {
+  color: var(--gold-300);
+  font-weight: 700;
 }
 
 .footer__bottom {
